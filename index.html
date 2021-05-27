@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Reproductor de musica</title>
+</head>
+<body>
+<div class="container">
+    <div class="listado-canciones">
+        <div class="cancion">
+            <div class="titulo">
+                Seth rollings theme song
+            </div>
+            <div class="play" id="seth">
+                <span class="material-icons">
+                    play_arrow
+                </span>
+            </div>
+            <div class="stop">
+                <span class="material-icons">
+                    cancel
+                    </span>
+            </div>
+            <div class="descargar">
+                <a href="./audios/seth.mp3" download>
+                    <span class="material-icons descarga">
+                        file_download
+                    </span>
+                </a>
+            </div>
+        </div>
+
+        <div class="cancion">
+            <div class="titulo">
+                WWE Edge theme song
+            </div>
+            <div class="play" id="edge">
+                <span class="material-icons">
+                    play_arrow
+                </span>
+            </div>
+            <div class="stop">
+                <span class="material-icons">
+                    cancel
+                    </span>
+            </div>
+            <div class="descargar">
+                <a href="./audios/drew.mp3" download="">
+                    <span class="material-icons descarga">
+                        file_download
+                    </span>
+                </a>
+            </div>
+        </div>
+
+        <div class="cancion">
+            <div class="titulo">
+                Roman Reigns theme song
+            </div>
+            <div class="play" id="Roman">
+                <span class="material-icons">
+                    play_arrow
+                </span>
+            </div>
+            <div class="stop">
+                <span class="material-icons">
+                    cancel
+                    </span>
+            </div>
+            <div class="descargar">
+                <a href="./audios/drew.mp3" download="">
+                    <span class="material-icons descarga">
+                        file_download
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <input type="range" max="1" min ="0" step="0.1" class="controlV">
+</div>
+<script src="codigo.js"></script>
+</body>
+</html>

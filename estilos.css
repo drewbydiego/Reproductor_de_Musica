@@ -1,0 +1,84 @@
+html{
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom, rgb(171, 173, 173), rgba(217, 224, 224, 0.712),rgb(171, 173, 173));
+}
+.container{
+    width: 60%;
+    height: 95vh;
+    margin: 0rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(to bottom, rgba(3, 105, 105, 0.637), rgba(0, 128, 128, 0.479),rgba(3, 105, 105, 0.637));
+
+    border-radius: 10px;
+}
+.listado-canciones{
+    width: 90%;
+    height: 50%;
+}
+.cancion{
+    padding: 1rem 2rem;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.titulo{
+    flex: 6;
+}
+.play:hover{
+    color: rgb(7, 168, 7);
+}
+.stop:hover{
+    color: rgb(253, 112, 87);
+}
+.play, .stop, .descargar{
+    flex: 1;
+}
+.material-icons{
+    cursor: pointer;
+}
+.cancionIniciada{
+    color: green;
+}
+.cancionPausa{
+    color: red;
+}
+.descarga{
+color: rgb(3, 121, 121);
+}
+.descarga:hover{
+    color: rgb(16, 214, 214);
+}
+.controlV{
+    width: 80%;
+    margin: 0 auto;
+}
+@media screen and (max-width: 816px) {
+    .container{
+        width: 75%;
+    }
+}
+@media screen and (max-width: 548px) {
+    .container{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 348px) {
+    .container{
+        width: 90%;
+    }
+    .titulo{
+        flex: 3;
+    }
+}
+@media screen and (max-width: 348px) {
+    .container{
+        width: 90%;
+    }
+    .titulo{
+        flex: 2;
+    }
+}
