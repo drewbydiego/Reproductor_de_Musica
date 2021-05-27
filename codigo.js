@@ -27,21 +27,26 @@ for (elemento of playCancion) {
         audio = new Audio(`./audios/${cancion}.mp3`);
         //Comprobando si la cancion ya ha iniciado y si es asi, continuar en su currentTime correspondiente
             audio.play();
-            console.log('play presionado ' + reproduciendo);
+            //Pasando el nombre de la cancion como parametro para mostrar la portada
+            portadaCancion(cancion);
         }
         playPresionado = true;
         //Añadiendo la clase que le da color al play
         this.classList.add('cancionIniciada');
         estiloPlay = document.querySelector('.cancionIniciada');
         //Quitando la clase que le da color al stop
-
         if(stopPresionado == true){
             estiloStop.classList.remove('cancionPausa');
         }
+
     });
 
 }
 
+}
+
+function portadaCancion(nombreCancion){
+    console.log(nombreCancion);
 }
 //PARAR LA CANCION
 for (elemento of stopCancion){
@@ -58,7 +63,6 @@ for (elemento of stopCancion){
             if(reproduciendo == 1){
                 audio.pause();
                 reproduciendo = 0;
-                console.log('Stop presionado ' + reproduciendo);
             }
     });
 }
