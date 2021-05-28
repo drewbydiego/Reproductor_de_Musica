@@ -14,23 +14,29 @@ var duracion;
 var progreso;
 
 muteSonido.addEventListener('click',()=>{
-    if(audio.muted == false){
-        audio.muted =true;
-        muteSonido.innerHTML = "volume_off"
-    }else{
-        audio.muted = false;
-        muteSonido.innerHTML = "volume_up"
+    if(reproduciendo == 1){
+        if(audio.muted == false){
+            audio.muted =true;
+            muteSonido.innerHTML = "volume_off"
+        }else{
+            audio.muted = false;
+            muteSonido.innerHTML = "volume_up"
+        }
     }
 });
 
 barra_progreso.addEventListener('change',function(){
     let progreso = this.value;
-    audio.currentTime= progreso;
+    if(reproduciendo == 1){
+        audio.currentTime= progreso;
+    }
 });
 
 volumen.addEventListener('change',function(){
     let vol = this.value;
-    audio.volume = vol;
+    if(reproduciendo == 1){
+        audio.volume = vol;
+    }
 });
 
 
@@ -49,7 +55,8 @@ for (elemento of playCancion) {
             reproduciendo = 1;
         audio = new Audio(`./audios/${cancion}.mp3`);
         //Comprobando si la cancion ya ha iniciado y si es asi, continuar en su currentTime correspondiente
-        audio.volume = volumen.value;
+        portadaCancion(cancion);
+            audio.volume = volumen.value;
             audio.play();
             //Pasando el nombre de la cancion como parametro para mostrar la portada
             var intervalo = setInterval(function(){
@@ -81,8 +88,25 @@ for (elemento of playCancion) {
 }
 
 }
-function portadaCancion(/*nombreCancion*/){
-    //console.log(nombreCancion);
+//FUNCION PARA AÑADIR PORTADAS A LAS CANCIONES
+function portadaCancion(nombreCancion){
+    if(reproduciendo == 1){
+        //portada.classList.remove('portada');
+        if(nombreCancion == 'seth'){
+            console.log(nombreCancion);
+            //portada.style.background = "./portadas/seth.jpg";
+            portada.setAttribute("src", "./portadas/seth.jpg")
+            /*portada.classList.add('seth');
+            portada.classList.remove('edge');
+            portada.classList.remove('roman');*/
+        }else if(nombreCancion == 'edge'){
+            console.log(nombreCancion);
+            portada.setAttribute("src", "./portadas/edge.jpg")
+        }else if(nombreCancion == 'roman'){
+            console.log(nombreCancion);
+            portada.setAttribute("src", "./portadas/roman.jpg")
+        }
+    }
 }
 //PARAR LA CANCION
 for (elemento of stopCancion){

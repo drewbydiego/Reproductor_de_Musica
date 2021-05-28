@@ -6,7 +6,7 @@ background: linear-gradient(to bottom, rgb(70, 75, 75), rgb(155, 167, 167),rgb(7
 
 }
 .container{
-    box-shadow: 
+    box-shadow:
     12px 12px 16px 0 rgba(255, 255, 255, 0.3) inset,
     -8px -8px 12px 0 rgba(0, 0, 0, .25) inset;
     width: 60%;
@@ -72,13 +72,27 @@ color: rgb(3, 52, 107);
     width: 35%;
     height: 35%;
     margin: 0rem auto 2rem auto;
-
-align-items: center;
-
 border-radius: 40px;
 display: flex;
 justify-content: center;
-
+background-image: no-repeat;
+background-image: fixed;
+background-image: center;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+box-shadow:
+-8px -8px 12px 0 rgba(0, 0, 0, .25) inset;
+}
+.seth{
+    width: 35%;
+    height: 35%;
+    margin: 0rem auto 2rem auto;
+align-items: center;
+border-radius: 40px;
+display: flex;
+justify-content: center;
 background-image: url(./portadas/seth.jpg);
 background-image: no-repeat;
 background-image: fixed;
@@ -90,12 +104,44 @@ background-size: cover;
 box-shadow:
 -8px -8px 12px 0 rgba(0, 0, 0, .25) inset;
 }
-.imagenportada{
-    width: 100%;
-    height: 100%;
 
-    border-radius: 20px;
-
+.edge{
+    width: 35%;
+    height: 35%;
+    margin: 0rem auto 2rem auto;
+align-items: center;
+border-radius: 40px;
+display: flex;
+justify-content: center;
+background-image: url(./portadas/edge.jpg);
+background-image: no-repeat;
+background-image: fixed;
+background-image: center;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+box-shadow:
+-8px -8px 12px 0 rgba(0, 0, 0, .25) inset;
+}
+.roman{
+    width: 35%;
+    height: 35%;
+    margin: 0rem auto 2rem auto;
+align-items: center;
+border-radius: 40px;
+display: flex;
+justify-content: center;
+background-image: url(./portadas/roman.jpg);
+background-image: no-repeat;
+background-image: fixed;
+background-image: center;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+box-shadow:
+-8px -8px 12px 0 rgba(0, 0, 0, .25) inset;
 }
 .contenedorSecu{
     height: fit-content;
@@ -111,26 +157,26 @@ box-shadow:
 
 @media screen and (min-width: 443px) {
 .portada{
-    width: 75%;
+    width: 85%;
 }
 }
 @media screen and (max-width: 599px) {
     .portada{
-        width: 65%;
+        width: 70%;
     }
     }
     @media screen and (min-width: 617px) {
         .portada{
-            width: 60%;
+            width: 65%;
         }
         }
         @media screen and (min-width: 757px) {
             .portada{
-                width: 55%;
+                width: 60%;
             }
             }
             @media screen and (min-width: 905px) {
                 .portada{
-                    width: 40%;
+                    width: 55%;
                 }
                 }
