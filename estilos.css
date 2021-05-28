@@ -144,3 +144,9 @@ box-shadow:
     -8px -8px 12px 0 rgba(0, 0, 0, 0.25);
 }
 
+
+@media screen and (max-width: 910px) {
+    .container{
+    width: 75%;
+    }
+}
