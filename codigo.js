@@ -91,19 +91,11 @@ for (elemento of playCancion) {
 //FUNCION PARA AÑADIR PORTADAS A LAS CANCIONES
 function portadaCancion(nombreCancion){
     if(reproduciendo == 1){
-        //portada.classList.remove('portada');
         if(nombreCancion == 'seth'){
-            console.log(nombreCancion);
-            //portada.style.background = "./portadas/seth.jpg";
             portada.setAttribute("src", "./portadas/seth.jpg")
-            /*portada.classList.add('seth');
-            portada.classList.remove('edge');
-            portada.classList.remove('roman');*/
         }else if(nombreCancion == 'edge'){
-            console.log(nombreCancion);
             portada.setAttribute("src", "./portadas/edge.jpg")
         }else if(nombreCancion == 'roman'){
-            console.log(nombreCancion);
             portada.setAttribute("src", "./portadas/roman.jpg")
         }
     }
@@ -129,13 +121,3 @@ for (elemento of stopCancion){
             }
     });
 }
-/*
-function barraProgreso(duracion) {
-    velocidad = duracion / 100;
-    barra_progreso.value = velocidad;
-    console.log(velocidad);
-    intervalo = setInterval(function(){
-        barra_progreso.value = barra_progreso.value + velocidad;
-    },1000);
-    //portadaCancion(audio.duration);
-}*/
