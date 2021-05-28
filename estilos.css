@@ -144,7 +144,7 @@ box-shadow:
     -8px -8px 12px 0 rgba(0, 0, 0, 0.25);
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (min-width: 1080px) {
     .container{
     margin-top: 5%;
     width: 55%;
@@ -154,7 +154,7 @@ box-shadow:
 @media screen and (max-width: 910px) {
     .container{
     width: 70%;
-    margin-top: 10%;
+    margin-top: 5%;
     }
 }
 @media screen and (max-width: 640px) {
