@@ -10,7 +10,7 @@ background: linear-gradient(to bottom, rgb(70, 75, 75), rgb(155, 167, 167),rgb(7
     12px 12px 16px 0 rgba(255, 255, 255, 0.3) inset,
     -8px -8px 12px 0 rgba(0, 0, 0, .25) inset;
     width: 60%;
-    height: 95vh;
+    height: fit-content;
     margin: 0rem auto;
     display: flex;
     flex-direction: column;
@@ -20,6 +20,7 @@ background: linear-gradient(to bottom, rgb(70, 75, 75), rgb(155, 167, 167),rgb(7
     border-start-start-radius: 30px;
     border-end-start-radius: 5px;
     border-start-end-radius: 5px;
+    padding-bottom: 5%;
 }
 .listado-canciones{
     width: 90%;
@@ -148,5 +149,13 @@ box-shadow:
 @media screen and (max-width: 910px) {
     .container{
     width: 75%;
+    }
+}
+@media screen and (max-width: 640px) {
+    .container{
+    width: 80%;
+    }
+    .cancion{
+        padding: 0.8rem 1.1rem;
     }
 }
