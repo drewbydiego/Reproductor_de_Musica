@@ -144,7 +144,7 @@ box-shadow:
     -8px -8px 12px 0 rgba(0, 0, 0, 0.25);
 }
 
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 1000px) {
     .container{
     margin-top: 5%;
     width: 55%;
@@ -160,7 +160,7 @@ box-shadow:
 @media screen and (max-width: 640px) {
     .container{
     width: 80%;
-
+    margin-top: 1%;
     }
 }
 #progresocancion:active::-webkit-slider-thumb {
