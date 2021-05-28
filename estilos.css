@@ -6,9 +6,7 @@ background: linear-gradient(to bottom, rgb(70, 75, 75), rgb(155, 167, 167),rgb(7
 
 }
 .container{
-    box-shadow:
-    12px 12px 16px 0 rgba(255, 255, 255, 0.3) inset,
-    -8px -8px 12px 0 rgba(0, 0, 0, .25) inset;
+
     width: 60%;
     height: 60%;
     margin: 1rem auto;
